@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"io"
 	"log"
 	"net/http"
@@ -68,9 +67,9 @@ func run() error {
 				symbolList = append(symbolList, si[i].Symbol)
 				ratesList = append(ratesList, si[i].RatesIn)
 			}
-			r1 := symbolList
-			r2 := si[0].RatesIn.Last_trade
-			fmt.Printf("\n Si = %s, Last trade = %f \n", r1, r2)
+			// r1 := symbolList
+			// r2 := si[0].RatesIn.Last_trade
+
 			time.Sleep(time.Second * time.Duration(30))
 		}
 
@@ -92,8 +91,8 @@ func run() error {
 		for i := 0; i < len(out); i++ {
 
 			if out[i] == '[' {
-				out = out[:i+2] + strconv.Quote(string(symbolList[counter])) + ": " + out[i+1:]
-				fmt.Println("found 1")
+				out = out[:i+2] + strconv.Quote(string(symbolList[counter])) + ":" + out[i+1:]
+
 				counter++
 				i = i + 6
 
