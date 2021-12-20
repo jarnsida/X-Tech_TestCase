@@ -15,7 +15,7 @@
 На выходе список должен иметь следующий вид:
 
     ```js
-    {<symbol>: {price: <price_24h>, volume: <volume_24h>, last_trade: <last_trade_price>}...}
+    {<symbol>: {price: <price_24h>, volume: <volume_24h>, last_trade: <last_trade>}...}
     ```
 
 ## Пример
