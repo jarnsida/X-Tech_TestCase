@@ -99,7 +99,13 @@ func run() error {
 			}
 
 			if string(out[i]) == "}" && string(out[i+1]) == "," {
-				out = out[:i+3] + strconv.Quote(string(symbolList[counter])) + ": " + out[i+2:]
+				out = out[:i+1] + "},{" + strconv.Quote(string(symbolList[counter])) + ":" + out[i+2:]
+				counter++
+				i = i + 6
+
+			}
+			if string(out[i]) == "]" {
+				out = out[:i] + "}" + out[i:]
 				counter++
 				i = i + 6
 

@@ -1,0 +1,5 @@
+**/store/rates.db
+
+test.http
+
+**/cmd/app/main_sqlite.go
