@@ -62,10 +62,10 @@ func run() error {
 
 			//fmt.Println(string(incomeBytes))
 			//fmt.Println(si)
-
+			symbolList = nil
 			for i := 0; i < len(si); i++ {
 				symbolList = append(symbolList, si[i].Symbol)
-				ratesList = append(ratesList, si[i].RatesIn)
+				//ratesList = append(ratesList, si[i].RatesIn)
 			}
 			// r1 := symbolList
 			// r2 := si[0].RatesIn.Last_trade
