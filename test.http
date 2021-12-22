@@ -1,0 +1,3 @@
+//GET https://api.blockchain.com/v3/exchange/tickers
+
+curl -X GET http://localhost:3000/
