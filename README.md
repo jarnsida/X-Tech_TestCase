@@ -19,6 +19,12 @@
 
 <img src="./images/v2.0screenshot.png">
 
+### V2.1
+
+- Успешная сборка Docker контейнера
+
+<img src="./images/v2.1screen.png">
+
 
 # Тестовое задание
 
